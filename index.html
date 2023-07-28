@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DoggyDog</title>
+</head>
+
+
+
+<body>
+  <h1>DoggyDog</h1>
+  <p>Este es un blog donde puedes publicar fotos y comentarios de tus mascotas.</p>
+  <p>Para publicar una foto, haz clic en el botón "Agregar foto".</p>
+  <p>Para comentar una foto, haz clic en el botón "Agregar comentario".</p>
+  <p>Para ver todos los comentarios, haz clic en el botón "Ver comentarios".</p>
+  <!DOCTYPE html>
+  <html>
+
+    <div class="dropdown">
+        <button class="dropbtn">Menú</button>
+        <div class="dropdown-content">
+          <a href="#">Inicio</a>
+          <a href="#">Comentarios</a>
+          <a href="#">Fotos</a>
+        </div>
+      </div>
+
+  <head>
+    <title>Agregar comentarios y fotos</title>
+  </head>
+  <body>
+    <h1>Agregar comentarios y fotos</h1>
+    <form action="comentarios.php" method="post">
+      <input type="text" name="nombre" placeholder="Nombre">
+      <input type="text" name="comentario" placeholder="Comentario">
+      <input type="file" name="foto">
+      <input type="submit" value="Enviar">
+    </form>
+  </body>
+  </html>
+  <a href="index.html">Agregar comentarios y fotos</a>
+  
+
+  <form action="guardar-foto.php" method="post" enctype="multipart/form-data">
+    <input type="file" name="foto">
+    <input type="submit" value="Guardar">
+  </form>
+
+
+  
